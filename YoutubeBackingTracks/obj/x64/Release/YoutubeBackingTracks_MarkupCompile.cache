@@ -4,11 +4,11 @@
 winexe
 C#
 .cs
-C:\Users\ajkes\source\repos\YoutubeBackingTracks\YoutubeBackingTracks\obj\Debug\
+C:\Users\ajkes\source\repos\YoutubeBackingTracks\YoutubeBackingTracks\obj\x64\Release\
 YoutubeBackingTracks
 none
 false
-DEBUG;TRACE
+TRACE
 C:\Users\ajkes\source\repos\YoutubeBackingTracks\YoutubeBackingTracks\App.xaml
 3991749260
 3-1319035264
