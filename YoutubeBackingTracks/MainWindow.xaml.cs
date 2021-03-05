@@ -1,22 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using Microsoft.Web.WebView2.Core;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using System.Data;
-using YoutubeBackingTracks;
-using Microsoft.Web.WebView2.Core;
-using System.IO;
 
 namespace YoutubeBackingTracks
 {
@@ -27,19 +13,19 @@ namespace YoutubeBackingTracks
     {
         public string address;
         public DataTable dt;
-        public PageVideo PageVideo { get; set; }
-        public PageEmpty PageEmpty { get; set; }
         List<TextBox> LstTb = new List<TextBox>();
-        string dataFile;
-        // DataContext = dt.AsDataView();
+        private string dataFile;
+
+        public PageVideo PageVideo { get; set; }
+
+        public PageEmpty PageEmpty { get; set; }
+
         public MainWindow()
-        {
-            
+        {            
             InitializeComponent();
             LstTb.Add(TbxArtist);
             LstTb.Add(TbxSong);
             LstTb.Add(TbxUrl);
-
             dt = new DataTable();
 
             PageVideo = new PageVideo();
@@ -49,11 +35,11 @@ namespace YoutubeBackingTracks
             dt.Columns.Add("Artist", typeof(string));
             dt.Columns.Add("Song", typeof(string));
             dt.Columns.Add("Url", typeof(string));
-            BackingTracks bt = new BackingTracks();
-
-            // MainFrame.Navigate(new Uri("PageVideo.xaml", UriKind.Relative));
+            BackingTracks bt = new BackingTracks();           
         }
-
+        /// <summary>
+        /// Create xml file location for creating datafile.
+        /// </summary>
         private void CreateFilename()
         {
             string subPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
@@ -63,16 +49,16 @@ namespace YoutubeBackingTracks
              dataFile = subPath + dirName +  @"\BackingTraks.xml";
         }
 
+        /// <summary>
+        /// Write Datatable to Xml file
+        /// </summary>
         private void CreateXml()
-        {
-
-           
+        {           
             dt.WriteXml(dataFile);
-
         }
 
         // <summary>
-        /// method for reading an XML file into a DataTable
+        /// method for creating xml data file if not already exists.
         /// </summary>
         /// <param name="file">name (and path) of the XML file</param>
         /// <returns></returns>
@@ -85,6 +71,8 @@ namespace YoutubeBackingTracks
             }
             return dt;
         }
+
+
 
         public class BackingTracks
         {
@@ -107,6 +95,11 @@ namespace YoutubeBackingTracks
             DgYtb.ItemsSource = dt.DefaultView;
         }
 
+        /// <summary>
+        /// Save input from listbox and save to xml file
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BtnSubmit_Click(object sender, RoutedEventArgs e)
         {
             bool update = true;
@@ -130,15 +123,19 @@ namespace YoutubeBackingTracks
                 dt.WriteXml(dataFile);
             }           
         }
-
+        /// <summary>
+        /// If video is playing Close PageVideo and play new video in new PageVideo
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void DgYtb_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             string youtubeLink = (DgYtb.SelectedItem as DataRowView).Row[3].ToString();
-            address = youtubeLink.UrlToEmbedCode();
-            //address = (DgYtb.SelectedItem as DataRowView).Row[3].ToString();
-            //string youtubeLink = address;
-            //address =(DgYtb.SelectedItem as DataRowView).Row[3].ToString();
 
+           // extract Youtube video Id to embed link
+            address = youtubeLink.UrlToEmbedCode();
+
+            // Force a reload of PageVideo from PageEmpy.
             MainFrame.Navigate(new Uri("PageEmpty.xaml", UriKind.Relative)); 
         }
     }
