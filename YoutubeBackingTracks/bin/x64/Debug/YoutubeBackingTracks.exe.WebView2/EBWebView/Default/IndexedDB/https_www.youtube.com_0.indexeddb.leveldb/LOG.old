@@ -1,3 +1,15 @@
-2021/03/05-13:11:17.003 1408 Reusing MANIFEST C:\Users\ajkes\source\repos\YoutubeBackingTracks\YoutubeBackingTracks\bin\x64\Debug\YoutubeBackingTracks.exe.WebView2\EBWebView\Default\IndexedDB\https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
-2021/03/05-13:11:17.003 1408 Recovering log #4
-2021/03/05-13:11:17.011 1408 Reusing old log C:\Users\ajkes\source\repos\YoutubeBackingTracks\YoutubeBackingTracks\bin\x64\Debug\YoutubeBackingTracks.exe.WebView2\EBWebView\Default\IndexedDB\https_www.youtube.com_0.indexeddb.leveldb/000004.log 
+2021/03/05-16:54:54.576 4aa8 Reusing MANIFEST C:\Users\ajkes\source\repos\YoutubeBackingTracks\YoutubeBackingTracks\bin\x64\Debug\YoutubeBackingTracks.exe.WebView2\EBWebView\Default\IndexedDB\https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/03/05-16:54:54.576 4aa8 Recovering log #4
+2021/03/05-16:54:54.582 4aa8 Reusing old log C:\Users\ajkes\source\repos\YoutubeBackingTracks\YoutubeBackingTracks\bin\x64\Debug\YoutubeBackingTracks.exe.WebView2\EBWebView\Default\IndexedDB\https_www.youtube.com_0.indexeddb.leveldb/000004.log 
+2021/03/05-16:55:53.175 4aa8 Level-0 table #8: started
+2021/03/05-16:55:53.182 4aa8 Level-0 table #8: 671199 bytes OK
+2021/03/05-16:55:53.186 4aa8 Delete type=0 #4
+2021/03/05-16:55:53.186 4aa8 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2021/03/05-16:55:53.186 4aa8 Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x04\x01\x02\x01\x16\x00a\x00p\x00p\x00l\x00i\x00c\x00a\x00t\x00i\x00o\x00n\x00_\x00s\x00e\x00r\x00v\x00e\x00r\x00_\x00k\x00e\x00y' @ 1399 : 1
+2021/03/05-16:55:53.186 4aa8 Compacting 1@1 + 1@2 files
+2021/03/05-16:55:53.190 4aa8 Generated table #9@1: 112 keys, 3125 bytes
+2021/03/05-16:55:53.190 4aa8 Compacted 1@1 + 1@2 files => 3125 bytes
+2021/03/05-16:55:53.191 4aa8 compacted to: files[ 0 0 1 0 0 0 0 ]
+2021/03/05-16:55:53.192 4aa8 Delete type=2 #5
+2021/03/05-16:55:53.192 4aa8 Delete type=2 #8
+2021/03/05-16:55:53.192 4aa8 Manual compaction at level-1 from '\x00\x04\x01\x02\x01\x16\x00a\x00p\x00p\x00l\x00i\x00c\x00a\x00t\x00i\x00o\x00n\x00_\x00s\x00e\x00r\x00v\x00e\x00r\x00_\x00k\x00e\x00y' @ 1399 : 1 .. (end); will stop at (end)

@@ -4,7 +4,7 @@ namespace YoutubeBackingTracks
 {
     internal static class StringExtensions
     {
-
+        // make sure Url is valid
         static readonly Regex YoutubeVideoRegex = new Regex(@"youtu(?:\.be|be\.com)/(?:(.*)v(/|=)|(.*/)?)([a-zA-Z0-9-_]+)", RegexOptions.IgnoreCase);
 
         static internal string UrlToEmbedCode(this string url)

@@ -16,16 +16,10 @@ namespace YoutubeBackingTracks
         {
             window = (MainWindow)Application.Current.MainWindow;
             InitializeComponent();
-            VideoAddress = window.address;
-            //if (webView != null)
-            //{
-            //    webView.CoreWebView2.Navigate(VideoAddress);
-            //}
+            VideoAddress = window.address;          
         }
         private void ButtonGo_Click(object sender, RoutedEventArgs e)
-        {
-           //r txt = addressBar.Text;
-
+        { 
             if (webView != null )
             {
                 webView.CoreWebView2.Navigate(VideoAddress);
@@ -39,20 +33,15 @@ namespace YoutubeBackingTracks
                 try
                 {
                     await webView.EnsureCoreWebView2Async(null);
-                    webView.CoreWebView2.Navigate(VideoAddress);
-                }
-                catch (Exception)
-                {
-                    string html = "<html><head>";
-                    html += "<meta content='IE=Edge' http-equiv='X-UA-Compatible'/>";
-                    html += "<iframe id='video' src= 'https://www.youtube.com/embed/{0}' width='600' height='300' frameborder='0' allowfullscreen></iframe>";
-                    html += "</body></html>";
                     webView.Source = new Uri("https://www.youtube.com/embed/" + VideoAddress);
 
                 }
-                //await webView.EnsureCoreWebView2Async(null);
-               // webView.CoreWebView2.Navigate(VideoAddress);
-                
+                catch (Exception ex)
+                {
+
+                    MessageBox.Show(ex.ToString());
+
+                }
             }
         }
     }
