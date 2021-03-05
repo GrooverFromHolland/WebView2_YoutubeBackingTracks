@@ -1,0 +1,15 @@
+C:\Users\ajkes\source\repos\YoutubeBackingTracks\YoutubeBackingTracks\bin\Debug\YoutubeBackingTracks.exe.config
+C:\Users\ajkes\source\repos\YoutubeBackingTracks\YoutubeBackingTracks\bin\Debug\YoutubeBackingTracks.exe
+C:\Users\ajkes\source\repos\YoutubeBackingTracks\YoutubeBackingTracks\bin\Debug\YoutubeBackingTracks.pdb
+C:\Users\ajkes\source\repos\YoutubeBackingTracks\YoutubeBackingTracks\obj\Debug\YoutubeBackingTracks.csprojAssemblyReference.cache
+C:\Users\ajkes\source\repos\YoutubeBackingTracks\YoutubeBackingTracks\obj\Debug\MainWindow.g.cs
+C:\Users\ajkes\source\repos\YoutubeBackingTracks\YoutubeBackingTracks\obj\Debug\App.g.cs
+C:\Users\ajkes\source\repos\YoutubeBackingTracks\YoutubeBackingTracks\obj\Debug\YoutubeBackingTracks_MarkupCompile.cache
+C:\Users\ajkes\source\repos\YoutubeBackingTracks\YoutubeBackingTracks\obj\Debug\YoutubeBackingTracks_MarkupCompile.lref
+C:\Users\ajkes\source\repos\YoutubeBackingTracks\YoutubeBackingTracks\obj\Debug\MainWindow.baml
+C:\Users\ajkes\source\repos\YoutubeBackingTracks\YoutubeBackingTracks\obj\Debug\YoutubeBackingTracks.g.resources
+C:\Users\ajkes\source\repos\YoutubeBackingTracks\YoutubeBackingTracks\obj\Debug\YoutubeBackingTracks.Properties.Resources.resources
+C:\Users\ajkes\source\repos\YoutubeBackingTracks\YoutubeBackingTracks\obj\Debug\YoutubeBackingTracks.csproj.GenerateResource.cache
+C:\Users\ajkes\source\repos\YoutubeBackingTracks\YoutubeBackingTracks\obj\Debug\YoutubeBackingTracks.csproj.CoreCompileInputs.cache
+C:\Users\ajkes\source\repos\YoutubeBackingTracks\YoutubeBackingTracks\obj\Debug\YoutubeBackingTracks.exe
+C:\Users\ajkes\source\repos\YoutubeBackingTracks\YoutubeBackingTracks\obj\Debug\YoutubeBackingTracks.pdb
