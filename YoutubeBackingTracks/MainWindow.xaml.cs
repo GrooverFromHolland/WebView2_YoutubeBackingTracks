@@ -114,13 +114,18 @@ namespace YoutubeBackingTracks
                 {
                     update = false;
                 }
+                item.Text = string.Empty;
             }
 
             if (update)
             {
                 dt.Rows.Add(bt.Id(), bt.Artist, bt.Song, bt.Url);
+
+                //refresh DgYtb.ItemsSource.
                 DgYtb.ItemsSource = null;
                 DgYtb.ItemsSource = dt.DefaultView;
+
+                //save data.
                 dt.WriteXml(dataFile);
             }           
         }
@@ -134,6 +139,10 @@ namespace YoutubeBackingTracks
             try
             {
                 string youtubeLink = (DgYtb.SelectedItem as DataRowView).Row[3].ToString();
+                if(DgYtb.SelectedItem == null)
+                {
+                    return;
+                }
 
                 // extract Youtube video Id to embed link
                 address = youtubeLink.UrlToEmbedCode();
@@ -147,6 +156,24 @@ namespace YoutubeBackingTracks
                 MessageBox.Show(ex.ToString());
             }
          
+        }
+
+        private void BtnHide_Click(object sender, RoutedEventArgs e)
+        {
+            if(StpnlTop.Visibility == Visibility.Visible)
+            {
+                StpnlTop.Visibility = Visibility.Collapsed;
+                BtnHide.Content = "6";
+                PageVideo.webView.HorizontalAlignment = HorizontalAlignment.Stretch;
+                PageVideo.webView.VerticalAlignment= VerticalAlignment.Stretch;
+            }
+            else
+            {
+                StpnlTop.Visibility = Visibility.Visible;
+                BtnHide.Content = "5";
+                PageVideo.webView.HorizontalAlignment = HorizontalAlignment.Left;
+                PageVideo.webView.VerticalAlignment = VerticalAlignment.Top;
+            }
         }
     }
 }

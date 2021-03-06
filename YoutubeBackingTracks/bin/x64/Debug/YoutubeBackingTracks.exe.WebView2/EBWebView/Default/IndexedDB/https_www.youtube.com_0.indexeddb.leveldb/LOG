@@ -1,8 +1,8 @@
-2021/03/05-17:00:38.950 1910 Reusing MANIFEST C:\Users\ajkes\source\repos\YoutubeBackingTracks\YoutubeBackingTracks\bin\x64\Debug\YoutubeBackingTracks.exe.WebView2\EBWebView\Default\IndexedDB\https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
-2021/03/05-17:00:38.950 1910 Recovering log #7
-2021/03/05-17:00:38.950 1910 Reusing old log C:\Users\ajkes\source\repos\YoutubeBackingTracks\YoutubeBackingTracks\bin\x64\Debug\YoutubeBackingTracks.exe.WebView2\EBWebView\Default\IndexedDB\https_www.youtube.com_0.indexeddb.leveldb/000007.log 
-2021/03/05-17:07:47.661 1910 Level-0 table #12: started
-2021/03/05-17:07:47.661 1910 Level-0 table #12: 0 bytes OK
-2021/03/05-17:07:47.663 1910 Delete type=0 #7
-2021/03/05-17:07:47.664 1910 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
-2021/03/05-17:07:47.664 1910 Manual compaction at level-1 from (begin) .. (end); will stop at (end)
+2021/03/06-14:42:18.635 35dc Reusing MANIFEST C:\Users\ajkes\source\repos\YoutubeBackingTracks\YoutubeBackingTracks\bin\x64\Debug\YoutubeBackingTracks.exe.WebView2\EBWebView\Default\IndexedDB\https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/03/06-14:42:18.635 35dc Recovering log #36
+2021/03/06-14:42:18.635 35dc Reusing old log C:\Users\ajkes\source\repos\YoutubeBackingTracks\YoutubeBackingTracks\bin\x64\Debug\YoutubeBackingTracks.exe.WebView2\EBWebView\Default\IndexedDB\https_www.youtube.com_0.indexeddb.leveldb/000036.log 
+2021/03/06-14:44:44.515 2fd4 Level-0 table #41: started
+2021/03/06-14:44:44.515 2fd4 Level-0 table #41: 0 bytes OK
+2021/03/06-14:44:44.517 2fd4 Delete type=0 #36
+2021/03/06-14:44:44.517 2fd4 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2021/03/06-14:44:44.517 2fd4 Manual compaction at level-1 from (begin) .. (end); will stop at (end)

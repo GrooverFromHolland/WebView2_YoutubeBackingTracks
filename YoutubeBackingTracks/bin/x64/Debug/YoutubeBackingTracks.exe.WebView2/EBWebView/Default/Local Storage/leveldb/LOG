@@ -1,3 +1,6 @@
-2021/03/05-16:54:52.371 a0c Reusing MANIFEST C:\Users\ajkes\source\repos\YoutubeBackingTracks\YoutubeBackingTracks\bin\x64\Debug\YoutubeBackingTracks.exe.WebView2\EBWebView\Default\Local Storage\leveldb/MANIFEST-000001
-2021/03/05-16:54:52.372 a0c Recovering log #3
-2021/03/05-16:54:52.372 a0c Reusing old log C:\Users\ajkes\source\repos\YoutubeBackingTracks\YoutubeBackingTracks\bin\x64\Debug\YoutubeBackingTracks.exe.WebView2\EBWebView\Default\Local Storage\leveldb/000003.log 
+2021/03/06-14:37:20.311 1f74 Reusing MANIFEST C:\Users\ajkes\source\repos\YoutubeBackingTracks\YoutubeBackingTracks\bin\x64\Debug\YoutubeBackingTracks.exe.WebView2\EBWebView\Default\Local Storage\leveldb/MANIFEST-000001
+2021/03/06-14:37:20.312 1f74 Recovering log #3
+2021/03/06-14:37:20.312 1f74 Reusing old log C:\Users\ajkes\source\repos\YoutubeBackingTracks\YoutubeBackingTracks\bin\x64\Debug\YoutubeBackingTracks.exe.WebView2\EBWebView\Default\Local Storage\leveldb/000003.log 
+2021/03/06-14:47:19.853 10fc Level-0 table #5: started
+2021/03/06-14:47:19.856 10fc Level-0 table #5: 11542 bytes OK
+2021/03/06-14:47:19.859 10fc Delete type=0 #3

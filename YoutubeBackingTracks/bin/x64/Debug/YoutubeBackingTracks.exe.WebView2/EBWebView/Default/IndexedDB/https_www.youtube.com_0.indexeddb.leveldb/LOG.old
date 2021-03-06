@@ -1,15 +1,15 @@
-2021/03/05-16:54:54.576 4aa8 Reusing MANIFEST C:\Users\ajkes\source\repos\YoutubeBackingTracks\YoutubeBackingTracks\bin\x64\Debug\YoutubeBackingTracks.exe.WebView2\EBWebView\Default\IndexedDB\https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
-2021/03/05-16:54:54.576 4aa8 Recovering log #4
-2021/03/05-16:54:54.582 4aa8 Reusing old log C:\Users\ajkes\source\repos\YoutubeBackingTracks\YoutubeBackingTracks\bin\x64\Debug\YoutubeBackingTracks.exe.WebView2\EBWebView\Default\IndexedDB\https_www.youtube.com_0.indexeddb.leveldb/000004.log 
-2021/03/05-16:55:53.175 4aa8 Level-0 table #8: started
-2021/03/05-16:55:53.182 4aa8 Level-0 table #8: 671199 bytes OK
-2021/03/05-16:55:53.186 4aa8 Delete type=0 #4
-2021/03/05-16:55:53.186 4aa8 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
-2021/03/05-16:55:53.186 4aa8 Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x04\x01\x02\x01\x16\x00a\x00p\x00p\x00l\x00i\x00c\x00a\x00t\x00i\x00o\x00n\x00_\x00s\x00e\x00r\x00v\x00e\x00r\x00_\x00k\x00e\x00y' @ 1399 : 1
-2021/03/05-16:55:53.186 4aa8 Compacting 1@1 + 1@2 files
-2021/03/05-16:55:53.190 4aa8 Generated table #9@1: 112 keys, 3125 bytes
-2021/03/05-16:55:53.190 4aa8 Compacted 1@1 + 1@2 files => 3125 bytes
-2021/03/05-16:55:53.191 4aa8 compacted to: files[ 0 0 1 0 0 0 0 ]
-2021/03/05-16:55:53.192 4aa8 Delete type=2 #5
-2021/03/05-16:55:53.192 4aa8 Delete type=2 #8
-2021/03/05-16:55:53.192 4aa8 Manual compaction at level-1 from '\x00\x04\x01\x02\x01\x16\x00a\x00p\x00p\x00l\x00i\x00c\x00a\x00t\x00i\x00o\x00n\x00_\x00s\x00e\x00r\x00v\x00e\x00r\x00_\x00k\x00e\x00y' @ 1399 : 1 .. (end); will stop at (end)
+2021/03/06-14:38:18.525 1100 Reusing MANIFEST C:\Users\ajkes\source\repos\YoutubeBackingTracks\YoutubeBackingTracks\bin\x64\Debug\YoutubeBackingTracks.exe.WebView2\EBWebView\Default\IndexedDB\https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/03/06-14:38:18.526 1100 Recovering log #33
+2021/03/06-14:38:18.526 1100 Reusing old log C:\Users\ajkes\source\repos\YoutubeBackingTracks\YoutubeBackingTracks\bin\x64\Debug\YoutubeBackingTracks.exe.WebView2\EBWebView\Default\IndexedDB\https_www.youtube.com_0.indexeddb.leveldb/000033.log 
+2021/03/06-14:41:44.305 5500 Level-0 table #37: started
+2021/03/06-14:41:44.309 5500 Level-0 table #37: 50052 bytes OK
+2021/03/06-14:41:44.310 5500 Delete type=0 #33
+2021/03/06-14:41:44.311 5500 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2021/03/06-14:41:44.311 5500 Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x02\x01\x1f\x04\x04\x01\x06\x00Q\x00U\x00E\x00U\x00E\x00D\x01(\x004\x006\x006\x002\x00B\x000\x00C\x004\x008\x004\x00A\x004\x003\x00D\x001\x004\x001\x009\x00B\x007\x00B\x008\x001\x00F\x009\x001\x006\x002\x005\x006\x00B\x008\x006\x000\x001\x00E\x008\x006\x004\x000\x03\x00\x00\x00\x00\x00\x00\xf0?\x03\xec\xa7\xc82|\x80wB\x00\x03\x00\x00\x00\x00\x00@X@' @ 5376 : 1
+2021/03/06-14:41:44.311 5500 Compacting 1@1 + 1@2 files
+2021/03/06-14:41:44.314 5500 Generated table #38@1: 118 keys, 10113 bytes
+2021/03/06-14:41:44.314 5500 Compacted 1@1 + 1@2 files => 10113 bytes
+2021/03/06-14:41:44.315 5500 compacted to: files[ 0 0 1 0 0 0 0 ]
+2021/03/06-14:41:44.316 5500 Delete type=2 #31
+2021/03/06-14:41:44.316 5500 Delete type=2 #37
+2021/03/06-14:41:44.317 5500 Manual compaction at level-1 from '\x00\x02\x01\x1f\x04\x04\x01\x06\x00Q\x00U\x00E\x00U\x00E\x00D\x01(\x004\x006\x006\x002\x00B\x000\x00C\x004\x008\x004\x00A\x004\x003\x00D\x001\x004\x001\x009\x00B\x007\x00B\x008\x001\x00F\x009\x001\x006\x002\x005\x006\x00B\x008\x006\x000\x001\x00E\x008\x006\x004\x000\x03\x00\x00\x00\x00\x00\x00\xf0?\x03\xec\xa7\xc82|\x80wB\x00\x03\x00\x00\x00\x00\x00@X@' @ 5376 : 1 .. (end); will stop at (end)
