@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Web.WebView2.Wpf;
+using System;
 using System.Windows;
 using System.Windows.Controls;
 
@@ -9,9 +10,9 @@ namespace YoutubeBackingTracks
     /// </summary>
     public partial class PageVideo : Page
     {
-        private readonly Frame MainFrame;
-        private MainWindow window;
-        private string VideoAddress;
+        private readonly MainWindow window;
+        private readonly string VideoAddress;
+
         public PageVideo()
         {
             window = (MainWindow)Application.Current.MainWindow;
@@ -34,13 +35,10 @@ namespace YoutubeBackingTracks
                 {
                     await webView.EnsureCoreWebView2Async(null);
                     webView.Source = new Uri("https://www.youtube.com/embed/" + VideoAddress);
-
                 }
                 catch (Exception ex)
                 {
-
                     MessageBox.Show(ex.ToString());
-
                 }
             }
         }

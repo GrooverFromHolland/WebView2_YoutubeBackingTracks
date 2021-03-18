@@ -93,26 +93,34 @@
                         Background="CornflowerBlue"
                         Click="BtnSubmit_Click"></Button>
             </StackPanel>
-            <DataGrid  Name="DgYtb"
-                       Style="{DynamicResource DataGridStyle1}"
-                       RowHeaderWidth="0"
-                       Height="150"                       
-                       HorizontalScrollBarVisibility="Visible"
-                       VerticalScrollBarVisibility="Visible" 
-                       SelectionMode="Single"
-                       IsReadOnly="True"
-                       CanUserSortColumns="True"
-                       SelectionChanged="DgYtb_SelectionChanged"
-                       Background="#FF44474B"
-                       AlternatingRowBackground="Black"
-                       RowBackground="#FF3B2D2D"
-                       Foreground="#FFFFFEFE"
-                       BorderBrush="#FF7F4818" 
-                       CanUserAddRows="False"
-                       MaxHeight="400"
-                       Margin="10,0,10,10"
-                       FontSize="16"
-                       RowHeight="30" />
+                <DataGrid  Name="DgYtb"
+                           Style="{DynamicResource DataGridStyle1}"
+                           RowHeaderWidth="0"
+                           Height="190"
+                           HorizontalScrollBarVisibility="Visible"
+                           VerticalScrollBarVisibility="Visible"
+                           SelectionMode="Single"
+                           IsReadOnly="True"
+                           CanUserSortColumns="True"
+                           SelectionChanged="DgYtb_SelectionChanged"
+                           Background="#FF44474B"
+                           AlternatingRowBackground="Black"
+                           RowBackground="#FF3B2D2D"
+                           Foreground="#FFFFFEFE"
+                           BorderBrush="#FF7F4818"
+                           CanUserAddRows="False"
+                           MaxHeight="400"
+                           Margin="10,0,10,10"
+                           FontSize="16"
+                           RowHeight="35"
+                           ColumnHeaderHeight="30">
+                    <DataGrid.Resources>
+                        <Style TargetType="ScrollBar">
+                            <Setter Property="Background"
+                                    Value="DarkRed" />
+                        </Style>
+                    </DataGrid.Resources>
+                </DataGrid>
             </StackPanel>
             <Button  Name="BtnHide"
                      Foreground="white"
@@ -124,15 +132,18 @@
                     Content="5"
                      Margin="3"
                      Click="BtnHide_Click" />
-            <Frame Name="MainFrame"
-                   Background="#FF414040"
-                   MinHeight="800"
+            <DockPanel Name="DpnlFrame"
+                       LastChildFill="True">
+                <Frame Name="MainFrame"
+                       DockPanel.Dock="Top"
+                   Background="#FF414040"                   
                    HorizontalAlignment="Stretch"
                    VerticalAlignment="Stretch"
                    x:FieldModifier="public"                   
                    NavigationUIVisibility="Hidden"
                    HorizontalContentAlignment="Stretch"
-                   VerticalContentAlignment="Stretch"></Frame>           
+                   VerticalContentAlignment="Stretch"></Frame>
+            </DockPanel>
         </StackPanel>
     </Grid>
 </Window>

@@ -11,21 +11,17 @@
       Title="PageVideo"
       Background="Black"
       Loaded="Page_Loaded">
-    <Grid VerticalAlignment="Stretch">
-        <DockPanel Margin="5"
-                   LastChildFill="True">
-            <StackPanel Orientation="Horizontal"
-                        DockPanel.Dock="Top"></StackPanel>
-            <wv2:WebView2 Name="webView"
-                          Width="952"
-                          Height="572"
-                          MinHeight="400"
-                          MinWidth="800"
-                          HorizontalAlignment="Left"
-                          VerticalAlignment="Top"
-                          DockPanel.Dock="Bottom"
-                          Margin="15,15,0,15"
-                          Source="https://www.microsoft.com" />
-        </DockPanel >
-    </Grid>
+    <DockPanel Margin="5"
+               LastChildFill="True"
+               HorizontalAlignment="Stretch"
+               VerticalAlignment="Stretch">
+        <wv2:WebView2 Name="webView"
+                      DockPanel.Dock="Top"
+                      HorizontalAlignment="Stretch"
+                      VerticalAlignment="Stretch"
+                      MinHeight="400"
+                      MinWidth="800"
+                      Margin="15,15,0,15"
+                      Source="https://www.microsoft.com"/>
+    </DockPanel>
 </Page>

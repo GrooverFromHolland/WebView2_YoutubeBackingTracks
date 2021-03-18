@@ -13,7 +13,7 @@ namespace YoutubeBackingTracks
     {
         public string address;
         public DataTable dt;
-        List<TextBox> LstTb = new List<TextBox>();
+        readonly List<TextBox> LstTb = new List<TextBox>();
         private string dataFile;
 
         public PageVideo PageVideo { get; set; }
@@ -27,7 +27,6 @@ namespace YoutubeBackingTracks
             LstTb.Add(TbxSong);
             LstTb.Add(TbxUrl);
             dt = new DataTable();
-
             PageVideo = new PageVideo();
             PageEmpty = new PageEmpty();
             dt.TableName = "YtFragments";
@@ -37,6 +36,7 @@ namespace YoutubeBackingTracks
             dt.Columns.Add("Url", typeof(string));
             BackingTracks bt = new BackingTracks();           
         }
+
         /// <summary>
         /// Create xml file location for creating datafile.
         /// </summary>
@@ -72,8 +72,6 @@ namespace YoutubeBackingTracks
             return dt;
         }
 
-
-
         public class BackingTracks
         {
             public string Artist { get; set; }
@@ -103,10 +101,12 @@ namespace YoutubeBackingTracks
         private void BtnSubmit_Click(object sender, RoutedEventArgs e)
         {
             bool update = true;
-            BackingTracks bt = new BackingTracks();
-            bt.Artist = TbxArtist.Text;
-            bt.Song = TbxSong.Text;
-            bt.Url = TbxUrl.Text;
+            BackingTracks bt = new BackingTracks
+            {
+                Artist = TbxArtist.Text,
+                Song = TbxSong.Text,
+                Url = TbxUrl.Text
+            };
             foreach (var item in LstTb)
             {
                 //You cannot leave a TextBox empty.
@@ -119,6 +119,7 @@ namespace YoutubeBackingTracks
 
             if (update)
             {
+
                 dt.Rows.Add(bt.Id(), bt.Artist, bt.Song, bt.Url);
 
                 //refresh DgYtb.ItemsSource.
@@ -127,6 +128,7 @@ namespace YoutubeBackingTracks
 
                 //save data.
                 dt.WriteXml(dataFile);
+
             }           
         }
         /// <summary>
@@ -163,17 +165,16 @@ namespace YoutubeBackingTracks
             if(StpnlTop.Visibility == Visibility.Visible)
             {
                 StpnlTop.Visibility = Visibility.Collapsed;
-                BtnHide.Content = "6";
-                PageVideo.webView.HorizontalAlignment = HorizontalAlignment.Stretch;
-                PageVideo.webView.VerticalAlignment= VerticalAlignment.Stretch;
+                BtnHide.Content = "6"; 
+                
             }
             else
             {
                 StpnlTop.Visibility = Visibility.Visible;
-                BtnHide.Content = "5";
-                PageVideo.webView.HorizontalAlignment = HorizontalAlignment.Left;
-                PageVideo.webView.VerticalAlignment = VerticalAlignment.Top;
+                BtnHide.Content = "5";               
             }
+            PageVideo.webView.HorizontalAlignment = HorizontalAlignment.Stretch;
+            PageVideo.webView.VerticalAlignment= VerticalAlignment.Stretch;            
         }
     }
 }

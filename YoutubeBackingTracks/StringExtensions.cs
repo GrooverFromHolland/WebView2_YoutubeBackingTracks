@@ -15,13 +15,13 @@ namespace YoutubeBackingTracks
 
                 if (youtubeMatch.Success)
                 {
-                    return getYoutubeEmbedCode(youtubeMatch.Groups[youtubeMatch.Groups.Count - 1].Value);
+                    return GetYoutubeEmbedCode(youtubeMatch.Groups[youtubeMatch.Groups.Count - 1].Value);
                 }
             }
             return null;
         }
 
-        private static string getYoutubeEmbedCode(string youtubeId)
+        private static string GetYoutubeEmbedCode(string youtubeId)
         {
             return youtubeId;
         }
